@@ -66,7 +66,7 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gamestart = new Intent(MainMenu.this, ScoreActivity.class);
                 startActivity(gamestart);
-                finish();
+                finish(4000);
             }
         });
 
