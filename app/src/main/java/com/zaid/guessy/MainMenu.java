@@ -53,8 +53,8 @@ public class MainMenu extends AppCompatActivity {
         gameCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gamestart = new Intent(MainMenu.this, RatingActivity.class);
-                startActivity(gamestart);
+                Intent ratingstart = new Intent(MainMenu.this, RatingActivity.class);
+                startActivity(ratingstart);
                 finish();
             }
         });
