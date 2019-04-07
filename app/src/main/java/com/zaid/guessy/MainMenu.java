@@ -31,8 +31,8 @@ public class MainMenu extends AppCompatActivity {
         gameCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gamestart = new Intent(MainMenu.this, KnowledgeActivity.class);
-                startActivity(gamestart);
+                Intent knowledge = new Intent(MainMenu.this, KnowledgeActivity.class);
+                startActivity(knowledge);
                 finish();
             }
         });
@@ -71,10 +71,6 @@ public class MainMenu extends AppCompatActivity {
         });
 
         //Exit
-
-    }
-
-    public void gameStart(View view) {
 
     }
 }
