@@ -1,11 +1,11 @@
 package com.zaid.guessy;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class EnterName extends AppCompatActivity {
+public class EnterNameActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +14,7 @@ public class EnterName extends AppCompatActivity {
     }
 
     public void submitNama(View view) {
-        Intent submitNama = new Intent(EnterName.this, MainMenu.class);
+        Intent submitNama = new Intent(EnterNameActivity.this, MainMenuActivity.class);
         startActivity(submitNama);
         finish();
     }
