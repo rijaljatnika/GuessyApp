@@ -35,15 +35,6 @@ public class MainMenuActivity extends Activity {
             }
         });
 
-        // profile Card
-        profileMenu = findViewById(R.id.profile);
-        profileMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent profileIntent = new Intent(MainMenuActivity.this, ProfileActivity.class);
-                startActivity(profileIntent);
-            }
-        });
 
         //Rating Card
         ratingMenu = findViewById(R.id.rating);
