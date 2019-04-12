@@ -14,9 +14,9 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".KnowledgeActivity" />
         <activity android:name=".GameActivity" />
-        <activity android:name=".MainMenu" />
-        <activity android:name=".EnterName" />
-        <activity android:name=".getStarted" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".EnterNameActivity" />
+        <activity android:name=".GetStartedActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
