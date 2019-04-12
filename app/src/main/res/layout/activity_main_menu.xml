@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Rating"
+                    android:text="Ratingan"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
 
