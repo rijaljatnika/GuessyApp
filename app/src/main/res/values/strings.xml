@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Guessy</string>
+    <string name="hintRating">Rating</string>
+    <string name="hintBoardGame">Game Board</string>
+    <string name="hintKnowledge">Knowledge</string>
+    <string name="hintProfile">Profile</string>
+    <string name="hintScore">Score</string>
+    <string name="hintExit">Exit</string>
 </resources>
