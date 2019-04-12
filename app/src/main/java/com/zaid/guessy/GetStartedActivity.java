@@ -1,12 +1,11 @@
 package com.zaid.guessy;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class getStarted extends AppCompatActivity {
+public class GetStartedActivity extends Activity {
     //private static int splash = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +14,7 @@ public class getStarted extends AppCompatActivity {
     }
 
     public void started(View view) {
-        Intent masukanNama = new Intent(getStarted.this, EnterName.class);
+        Intent masukanNama = new Intent(GetStartedActivity.this, EnterNameActivity.class);
         startActivity(masukanNama);
         finish();
     }
