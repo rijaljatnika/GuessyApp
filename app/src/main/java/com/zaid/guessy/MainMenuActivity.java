@@ -3,9 +3,10 @@ package com.zaid.guessy;
 import android.content.Intent;
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import java.util.Random;
 
 public class MainMenuActivity extends Activity {
     LinearLayout gameMenu, knowledgeMenu, profileMenu, ratingMenu, scoreMenu, exitMenu;
@@ -22,7 +23,6 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent gameIntent = new Intent(MainMenuActivity.this, GameActivity.class);
                 startActivity(gameIntent);
-                finish();
             }
         });
         // knowledgeCard
@@ -32,7 +32,6 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent knowledgeIntent = new Intent(MainMenuActivity.this, KnowledgeActivity.class);
                 startActivity(knowledgeIntent);
-                finish();
             }
         });
 
@@ -43,7 +42,6 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent profileIntent = new Intent(MainMenuActivity.this, ProfileActivity.class);
                 startActivity(profileIntent);
-                finish();
             }
         });
 
@@ -54,7 +52,6 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent ratingIntent = new Intent(MainMenuActivity.this, RatingActivity.class);
                 startActivity(ratingIntent);
-                finish();
             }
         });
 
@@ -65,7 +62,6 @@ public class MainMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent scoreIntent = new Intent(MainMenuActivity.this, ScoreActivity.class);
                 startActivity(scoreIntent);
-                finish();
             }
         });
 

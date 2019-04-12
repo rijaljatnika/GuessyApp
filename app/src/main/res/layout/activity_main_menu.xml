@@ -22,7 +22,7 @@
             android:layout_marginTop="22dp"
             android:fontFamily="@font/fredoka_one_regular"
             android:text="Hanna Montana"
-            android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
@@ -34,7 +34,7 @@
             android:layout_marginTop="41dp"
             android:fontFamily="@font/scada_regular"
             android:text="Welcome"
-            android:textAlignment="center"
+            android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
@@ -51,22 +51,18 @@
 
         <LinearLayout
             android:id="@+id/gameBoard"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Board Game"
+                    android:contentDescription="@string/hintBoardGame"
                     android:src="@drawable/board" />
 
                 <TextView
@@ -74,33 +70,27 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Board Game"
+                    android:text="@string/hintBoardGame"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
         <!-- row 2 -->
         <LinearLayout
             android:id="@+id/knowledge"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Knowledge"
+                    android:contentDescription="@string/hintKnowledge"
                     android:src="@drawable/knowledge" />
 
                 <TextView
@@ -108,33 +98,27 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Knowledge"
+                    android:text="@string/hintKnowledge"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
         <!--row 3-->
         <LinearLayout
             android:id="@+id/profile"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Profile"
+                    android:contentDescription="@string/hintProfile"
                     android:src="@drawable/heart" />
 
                 <TextView
@@ -142,33 +126,27 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Profile"
+                    android:text="@string/hintProfile"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
         <!-- row 2 -->
         <LinearLayout
             android:id="@+id/rating"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Rating"
+                    android:contentDescription="@string/hintRating"
                     android:src="@drawable/rating" />
 
                 <TextView
@@ -176,32 +154,27 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Rating"
+                    android:text="@string/hintRating"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
 
-            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/score"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Score"
+                    android:contentDescription="@string/hintScore"
                     android:src="@drawable/score" />
 
                 <TextView
@@ -209,33 +182,27 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Score"
+                    android:text="@string/hintScore"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
         <!-- row 2 -->
         <LinearLayout
             android:id="@+id/exit"
-            android:layout_width="wrap_content"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:background="@drawable/rounded">
-
-            <LinearLayout
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded"
+            android:gravity="center">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="Exit"
+                    android:contentDescription="@string/hintExit"
                     android:src="@drawable/close" />
 
                 <TextView
@@ -243,11 +210,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/fredoka_one_regular"
-                    android:text="Exit"
+                    android:text="@string/hintExit"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp" />
-
-            </LinearLayout>
 
         </LinearLayout>
 
