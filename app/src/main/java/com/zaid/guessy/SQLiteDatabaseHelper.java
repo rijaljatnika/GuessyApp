@@ -20,10 +20,10 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE " + TABLE_NAME + " ( " +
-                KOLOM_ID + " INTEGER NOT NULL AUTOINCREMENT PRIMARY KEY, " +
+        String sql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " +
+                KOLOM_ID + " INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
                 KOLOM_USERNAME + " VARCHAR(100) NOT NULL, " +
-                KOLOM_SCORE + " INTEGER NOT NULL " +
+                KOLOM_SCORE + " INTEGER NOT NULL" +
                 ")";
         db.execSQL(sql);
     }

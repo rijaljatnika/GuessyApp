@@ -45,8 +45,9 @@ public class DBAdapter {
         Cursor cursor = db.query(SQLiteDatabaseHelper.TABLE_NAME, semuaKolom, null, null, null, null, SQLiteDatabaseHelper.KOLOM_SCORE + " DESC");
         cursor.moveToFirst();
         while(! cursor.isAfterLast()) {
-            String data = cursor.getString(1);
-            Log.w("INFO", "data = " + data);
+            String data = cursor.getString(1).concat("\t|\t" + cursor.getString(2));
+            Log.w("INFO", "username = " + data);
+            allData.add(data);
             cursor.moveToNext();
         }
         cursor.close();
