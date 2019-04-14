@@ -36,6 +36,18 @@ public class DBAdapter {
         return this;
     }
 
+//    public Player searchPlayer(String username, String password) {
+//        SQLiteDatabase dbs =
+//        // Mencari data Player
+//        Cursor cursor = db.rawQuery("SELECT * FROM " + SQLiteDatabaseHelper.TABLE_USER +
+//                " WHERE " + SQLiteDatabaseHelper.KOLOM_USERNAME + " =? " + " AND " +
+//                            SQLiteDatabaseHelper.KOLOM_PASSWORD + " =? " ,
+//                new String[]{username, password});
+//        cursor.moveToFirst();
+//
+//        return player;
+//    }
+
     // Menutup Database
     public void close() {
         dbHelper.close();

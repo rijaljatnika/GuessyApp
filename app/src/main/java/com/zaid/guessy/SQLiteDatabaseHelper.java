@@ -11,7 +11,7 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "db_guess.db";
     // Versi Database
     private static final int DATABASE_VERSION = 1;
-    // Nama Table
+    // Nama Table SKOR
     public static final String TABLE_NAME = "score_board";
     // kolom ID
     public static final String KOLOM_ID = "id_score";
@@ -19,6 +19,11 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
     public static final String KOLOM_USERNAME = "username";
     // kolom SCORE
     public static final String KOLOM_SCORE = "skor";
+
+//    // Nama Table Player
+//    public static final String TABLE_USER = "player";
+//    // kolom Password
+//    public static final String KOLOM_PASSWORD = "skor";
 
     public SQLiteDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -34,6 +39,14 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
                 ")";
         // Mengekseskusi Skrip
         db.execSQL(sql);
+
+//        // Skrip SQL untuk membuat Table PLAYER Jika Belum ada
+//        sql = "CREATE TABLE IF NOT EXISTS " + TABLE_USER + " ( " +
+//                KOLOM_USERNAME + " VARCHAR(100) NOT NULL PRIMARY KEY, " +
+//                KOLOM_PASSWORD + " VARCHAR(50) NOT NULL" +
+//                ")";
+//        // Mengekseskusi Skrip
+//        db.execSQL(sql);
     }
 
     @Override
@@ -42,6 +55,9 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
                 newVersion + ", akan menghapus semua data lama ?");
         // Menghapus TABLE SKOR
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+//        // Menghapus TABLE PLAYER
+//        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
+
         onCreate(db);
     }
 }
