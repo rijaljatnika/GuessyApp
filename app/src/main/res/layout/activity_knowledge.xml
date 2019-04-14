@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".KnowledgeActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/pemahaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:width="300dp"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_round"
+            android:text="Pemahaman" />
+
+        <Button
+            android:id="@+id/fakta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:width="300dp"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_round"
+            android:text="Fakta" />
+
+        <Button
+            android:id="@+id/mitos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:width="300sp"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_round"
+            android:text="Mitos" />
+
+        <Button
+            android:id="@+id/kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:width="300dp"
+            android:fontFamily="@font/fredoka_one_regular"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_round"
+            android:text="Kembali" />
+    </LinearLayout>
+
+</LinearLayout>

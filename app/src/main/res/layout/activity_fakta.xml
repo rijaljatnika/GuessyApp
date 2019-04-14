@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".PemahamanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:padding="30dp"
+        android:text="Fakta-Fakta Menstruasi"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/images" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="1. Stres bikin Haid ga teratur"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/fakta1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="2. Cewek jadi suka marah-marah."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/fakta2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="3. Haid buat perempuan doyan makan"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/fakta3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="4. Haid tidak membuat kamu lemas"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/fakta4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="5. Makan timun saat haid"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/fakta5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/scada_bold_italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumber : www.hallosehat.com"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

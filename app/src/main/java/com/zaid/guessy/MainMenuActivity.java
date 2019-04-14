@@ -4,13 +4,15 @@ import android.content.Intent;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.Random;
 
 public class MainMenuActivity extends Activity {
-    LinearLayout gameMenu, knowledgeMenu, profileMenu, ratingMenu, scoreMenu, exitMenu;
+    LinearLayout gameMenu, knowledgeMenu, profileMenu, ratingMenu, scoreMenu;
+    Button exitMenu;
     TextView username;
     public static String EXTRA_USERNAME = "extra_username";
     public static String USER_NAME;
@@ -37,6 +39,7 @@ public class MainMenuActivity extends Activity {
             }
         });
         // knowledgeCard
+        // masuk ke menu info
         knowledgeMenu = findViewById(R.id.knowledge);
         knowledgeMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +50,7 @@ public class MainMenuActivity extends Activity {
         });
 
         //Rating Card
+        // Untuk Masuk Ke menu Rating
         ratingMenu = findViewById(R.id.rating);
         ratingMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +61,7 @@ public class MainMenuActivity extends Activity {
         });
 
         // Score Card
+        // untuk masuk ke menu SCORE
         scoreMenu = findViewById(R.id.score);
         scoreMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +72,7 @@ public class MainMenuActivity extends Activity {
         });
 
         //Exit
-        exitMenu = (LinearLayout) findViewById(R.id.exit);
+        exitMenu = (Button) findViewById(R.id.exit);
         exitMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
