@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
+    <!-- Urutan di Papan High Score -->
     <TextView
         android:id="@+id/scoreNomor"
         android:layout_width="80dp"
@@ -15,6 +16,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/rounded"/>
 
+    <!-- Username Player di Papan High Score -->
     <TextView
         android:id="@+id/scoreUsername"
         android:layout_width="match_parent"
@@ -26,6 +28,7 @@
         android:textStyle="bold"
         android:layout_toRightOf="@id/scoreNomor"/>
 
+    <!-- Score Player di Papan High Score -->
     <TextView
         android:id="@+id/scoreScore"
         android:layout_width="match_parent"

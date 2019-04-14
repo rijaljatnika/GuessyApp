@@ -7,39 +7,6 @@
     tools:context=".QuizActivity"
     android:background="@drawable/background">
 
-    <LinearLayout
-        android:id="@+id/quiz_top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/quiz_title"
-            android:layout_alignParentTop="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Quiz"
-            android:textSize="30sp"
-            android:padding="3dp"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            />
-
-        <TextView
-            android:id="@+id/quiz_timer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:gravity="right"
-            android:textColor="@color/colorAccent"
-            android:text="Timer"
-            android:padding="3dp" />
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/quiz_question"
         android:layout_width="match_parent"
@@ -73,6 +40,40 @@
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:onClick="cekJawaban"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <!-- Menampilkan Tampilan Judul GAME -->
+        <TextView
+            android:id="@+id/quiz_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quiz"
+            android:textSize="30sp"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+
+        <!-- Menampilkan Tampilan Judul GAME -->
+        <TextView
+            android:id="@+id/quiz_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textColor="@color/colorAccent"
+            android:text="Timer"
+            android:padding="3dp" />
 
     </LinearLayout>
 

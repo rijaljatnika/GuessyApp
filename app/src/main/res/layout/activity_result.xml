@@ -7,6 +7,7 @@
     tools:context=".ResultActivity"
     android:background="@drawable/background">
 
+    <!-- Menampilkan pesan YOUR SCORE -->
     <TextView
         android:id="@+id/label_result"
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
         android:layout_marginBottom="20dp"
         android:layout_above="@id/result"/>
 
+    <!-- Menampilkan SCORE dari GAME -->
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
@@ -32,6 +34,7 @@
         android:textStyle="bold"
         android:textColor="#fff"/>
 
+    <!-- Menampilkan Tampilan TOMBOL NAVIGASI -->
     <LinearLayout
         android:id="@+id/nav_result"
         android:layout_width="match_parent"
@@ -39,6 +42,7 @@
         android:layout_below="@id/result"
         android:layout_marginTop="30dp">
 
+        <!-- TOMBOL untuk mulai Memainkan Game Lagi-->
         <Button
             android:id="@+id/play_again"
             android:layout_width="match_parent"
@@ -48,6 +52,7 @@
             android:layout_marginHorizontal="10dp"
             android:background="@drawable/rounded"/>
 
+        <!-- TOMBOL untuk melihat Papan High Score-->
         <Button
             android:id="@+id/high_score"
             android:layout_width="match_parent"

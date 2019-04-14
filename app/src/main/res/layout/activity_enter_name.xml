@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     tools:context=".EnterNameActivity">
 
+    <!-- Menampilakn Label Nama untuk perintah Memasukkan Nama -->
     <TextView
         android:id="@+id/labelNama"
         android:layout_width="wrap_content"
@@ -22,6 +23,7 @@
         android:textSize="18sp"
         android:layout_above="@id/editNama"/>
 
+    <!-- Memasukkan Nama Player -->
     <EditText
         android:id="@+id/editNama"
         android:layout_width="wrap_content"
@@ -42,44 +44,8 @@
         android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
-    <!--
-    <TextView
-        android:id="@+id/labelPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Enter Your Password"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:width="281dp"
-        android:height="41dp"
-        android:background="@drawable/rounded"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:textSize="14sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/labelPassword" />
-    -->
+    <!-- Tombol untuk Melanjutkan ke Main Menu-->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"

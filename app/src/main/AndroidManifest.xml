@@ -15,7 +15,6 @@
         <activity android:name=".ResultActivity" />
         <activity android:name=".ScoreActivity" />
         <activity android:name=".RatingActivity" />
-        <activity android:name=".ProfileActivity" />
         <activity android:name=".KnowledgeActivity" />
         <activity android:name=".GameActivity" />
         <activity android:name=".MainMenuActivity" />

@@ -9,6 +9,7 @@
     android:layout_gravity="center"
     tools:context=".GetStartedActivity">
 
+    <!-- Menampilakn Gambar Splash Screen -->
     <ImageView
         android:id="@+id/gs_image"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/splash" />
 
+    <!-- Menampilkan Pesan "Welcome" ke Player -->
     <TextView
         android:id="@+id/gs_welcome"
         android:layout_width="wrap_content"
@@ -32,6 +34,7 @@
         android:textSize="18sp"
         android:layout_below="@id/gs_image"/>
 
+    <!-- Menampilkan Nama Aplikasi GUESSY -->
     <TextView
         android:layout_gravity="center"
         android:id="@+id/gs_app_name"
@@ -46,6 +49,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/gs_welcome"/>
 
+    <!-- Tombol Navigasi untuk melanjutkan ke Menu Memasukkan Nama -->
     <Button
         android:layout_marginTop="100dp"
         android:layout_gravity="center"

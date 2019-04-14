@@ -14,6 +14,7 @@
         android:layout_height="52dp"
         android:layout_weight="2">
 
+        <!-- Menampilakn Pesan "Welcome" kepada Player-->
         <TextView
             android:id="@+id/welcome_nama"
             android:layout_width="match_parent"
@@ -26,6 +27,7 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
+        <!-- Menampilkan Nama Player yangs sedang main -->
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
@@ -49,6 +51,7 @@
         android:columnCount="2"
         android:rowCount="2">
 
+        <!-- Menampilkan Tombol navigasi Untuk Menu GAME -->
         <LinearLayout
             android:id="@+id/gameBoard"
             android:layout_width="128dp"
@@ -59,12 +62,11 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!--
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/board" />
-            -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,7 +78,7 @@
 
         </LinearLayout>
 
-        <!-- row 2 -->
+        <!-- Menampilkan Tombol navigasi Untuk Menu KNOWLEDGE -->
         <LinearLayout
             android:id="@+id/knowledge"
             android:layout_width="128dp"
@@ -86,13 +88,13 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-            <!--
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/hintKnowledge"
                 android:src="@drawable/knowledge" />
-            -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,7 +108,7 @@
 
         <!--row 3-->
 
-        <!-- row 2 -->
+        <!-- Menampilkan Tombol navigasi Untuk Menu RATING -->
         <LinearLayout
             android:id="@+id/rating"
             android:layout_width="128dp"
@@ -116,12 +118,12 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-            <!--
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/rating" />
-            -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -134,6 +136,7 @@
 
         </LinearLayout>
 
+        <!-- Menampilkan Tombol navigasi Untuk Menu SCORE -->
         <LinearLayout
             android:id="@+id/score"
             android:layout_width="128dp"
@@ -143,13 +146,13 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-            <!--
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/hintScore"
                 android:src="@drawable/score" />
-            -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -165,6 +168,7 @@
 
     </GridLayout>
 
+    <!-- Menampilkan Tombol navigasi Untuk Keluar dari Aplikasi -->
     <LinearLayout
         android:id="@+id/exit"
         android:layout_width="128dp"
@@ -173,14 +177,14 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
-        <!--
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:contentDescription="@string/hintExit"
             android:src="@drawable/close" />
-        -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
