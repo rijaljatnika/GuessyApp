@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".PemahamanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:padding="30dp"
+        android:text="Mitos tentang Menstruasi"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mens" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="1. Makan Mentimun saat haid"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/mitos1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="2. Minum Es saat haid bikin darah membeku"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/mitos2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="3. Tidak boleh keramas saat haid"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/mitos3"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="4. Tidak Boleh Makan Nanas saat Menstruasi"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/scada_regular"
+                android:gravity="start"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/judulId3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/scada_bold"
+                android:text="5. Tidak Boleh Memotong Kuku dan Rambut saat Menstruasi"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:fontFamily="@font/scada_regular"
+                android:text="@string/mitos5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/scada_bold_italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumber : www.hallosehat.com"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

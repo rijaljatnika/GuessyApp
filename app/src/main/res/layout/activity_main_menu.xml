@@ -61,12 +61,12 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-
+            <!--
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/board" />
-
+            -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,13 +88,13 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-
+            <!--
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/hintKnowledge"
                 android:src="@drawable/knowledge" />
-
+            -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,12 +118,12 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-
+            <!--
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/rating" />
-
+            -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -146,13 +146,13 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
-
+            <!--
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/hintScore"
                 android:src="@drawable/score" />
-
+            -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -177,14 +177,14 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
-
+        <!--
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:contentDescription="@string/hintExit"
             android:src="@drawable/close" />
-
+        -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

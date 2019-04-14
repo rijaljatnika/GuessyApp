@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".KnowledgeActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/pemahaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:text="Pemahaman"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/fakta"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/fakta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fakta"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/mitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:width="300sp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:layout_below="@id/fakta"
+        android:layout_centerHorizontal="true"
+        android:text="Mitos"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:width="300sp"
+        android:background="@drawable/btn_round"
+        android:fontFamily="@font/fredoka_one_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Kembali"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
