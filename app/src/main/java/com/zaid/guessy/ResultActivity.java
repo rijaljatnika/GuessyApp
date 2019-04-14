@@ -41,7 +41,9 @@ public class ResultActivity extends Activity {
                     Log.w("INFO", "INSERT DATA GAGAL");
                 }
                 db.close();
+                GameActivity.SCORE = 0;
                 startActivity(intentPlayAgain);
+                finish();
             }
         });
         // Mengatur tombol High Score agar dapat
@@ -52,7 +54,9 @@ public class ResultActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intentPlayAgain = new Intent(ResultActivity.this, GameActivity.class);
+                GameActivity.SCORE = 0;
                 startActivity(intentPlayAgain);
+                finish();
             }
         });
     }

@@ -43,6 +43,7 @@ public class GameActivity extends Activity {
     int jawabanGrid;
     //
     public static int numCount;
+    public ArrayList<Integer> luckyGrid = new ArrayList<>();
 
     public static int SCORE;
 
@@ -50,15 +51,25 @@ public class GameActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
         // Inisialisasi Nilai Awal
-        numCount = 5;
+        numCount = 10;
         numColumn = 5;
         // Menghitung Jumlah Grid Total
         jumlahGrid = numColumn * numColumn;
         // Merandom LUCKY GRID
-        jawabanGrid = randomAngka(jumlahGrid);
+        for (int i = 0; i < 10; i++) {
+            // MengacakAngka yang belum terjawab
+            jawabanGrid = randomAngka(jumlahGrid);
+            if(luckyGrid.contains(jawabanGrid)) {
+                jawabanGrid = randomAngka(jumlahGrid);
+                luckyGrid.add(jawabanGrid);
+            } else {
+                luckyGrid.add(jawabanGrid);
+            }
+        }
         // [DEBUG] Lucky Grid
-        // Toast.makeText(getApplicationContext(), Integer.toString(jawabanGrid), Toast.LENGTH_SHORT).show();
+         Toast.makeText(getApplicationContext(), Integer.toString(jawabanGrid), Toast.LENGTH_SHORT).show();
 
         // Mengatur Back Button ketika ditekan (CLICK)
         btnBack = (Button) findViewById(R.id.btnBack);
@@ -155,6 +166,8 @@ public class GameActivity extends Activity {
             return;
         }
 
+//        terjawab.add(Integer.parseInt(btnSelect.getText().toString()));
+
         // Meminta Service Getaran
         Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         // Merubah Warna Latar Menjadi ABU GELAP
@@ -162,6 +175,28 @@ public class GameActivity extends Activity {
         // Merubah Warna Teks Menjadi TRANSAPARAN
         btnSelect.setTextColor(Color.TRANSPARENT);
 
+        // Mengambil Angka pada Grid
+        int nomor = Integer.parseInt(((Button) view).getText().toString());
+        // Cek Kesesuaian Jawaban User dengan Jawaban Sebenarnya
+        if(luckyGrid.contains(nomor)) {
+            // Jika Jawaban Benar
+//            Toast.makeText(getApplicationContext(), "Jawaban Anda Benar", Toast.LENGTH_SHORT).show();
+            suara = MediaPlayer.create(this, R.raw.correct);
+            timer.cancel();
+            // Menambah Point
+            SCORE += 20;
+            btnSelect.setBackground(this.getResources().getDrawable(R.drawable.heart));
+        } else {
+            // Jika Jawaban Salah
+            Toast.makeText(getApplicationContext(), "Jawaban Anda Salah", Toast.LENGTH_SHORT).show();
+            suara = MediaPlayer.create(this, R.raw.wrong);
+            btnSelect.setBackground(this.getResources().getDrawable(R.drawable.close));
+            // Menambah jumlah nomor yang telah salah
+            numCount--;
+        }
+
+        suara.setLooping(false);
+        suara.start();
         // Cek SDK Version Device yang dipakai USER
         // melakukan getaran
         if (Build.VERSION.SDK_INT >= 26) {
@@ -169,25 +204,9 @@ public class GameActivity extends Activity {
         } else {
             vibrator.vibrate(1000);
         }
-        // Mengambil Angka pada Grid
-        int nomor = Integer.parseInt(((Button) view).getText().toString());
-        // Cek Kesesuaian Jawaban User dengan Jawaban Sebenarnya
-        if(nomor == jawabanGrid) {
-            // Jika Jawaban Benar
-            Toast.makeText(getApplicationContext(), "Jawaban Anda Benar", Toast.LENGTH_SHORT).show();
-            timer.cancel();
-            SCORE += 20;
-            jawabanGrid = randomAngka(jumlahGrid);
-        } else {
-            // Jika Jawaban Salah
-            Toast.makeText(getApplicationContext(), "Jawaban Anda Salah", Toast.LENGTH_SHORT).show();
-        }
-
-        // Menambah jumlah nomor yang telah dijawab
-        ++numCount;
 
         // Jika jumlah
-        if(numCount == 5) {
+        if(numCount == 0) {
             Intent intentScore = new Intent(GameActivity.this, ResultActivity.class);
             startActivity(intentScore);
             finish();
@@ -195,7 +214,7 @@ public class GameActivity extends Activity {
     }
 
     // Mengacak LUCKY GRID
-    public int randomAngka(int maks) {
+    public static int randomAngka(int maks) {
         Random random = new Random();
         int angka = random.nextInt(maks) + 1;
         return angka;

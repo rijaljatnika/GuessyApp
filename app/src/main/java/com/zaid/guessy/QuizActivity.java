@@ -33,7 +33,7 @@ public class QuizActivity extends Activity {
         setContentView(R.layout.activity_quiz);
 
         final Intent intent = getIntent();
-        nomor = intent.getIntExtra(EXTRA_NOMOR, 0);
+        nomor = GameActivity.randomAngka(soal.length-1);
         Toast.makeText(getApplicationContext(), "Nomor Soal : " + Integer.toString(nomor), Toast.LENGTH_SHORT).show();
 
         txtSoal = (TextView) findViewById(R.id.quiz_question);
@@ -57,8 +57,6 @@ public class QuizActivity extends Activity {
             @Override
             public void onFinish() {
                 timer.setText(Long.toString(0));
-                Intent intentScore = new Intent(QuizActivity.this, ResultActivity.class);
-                startActivity(intentScore);
                 finish();
             }
         };
@@ -72,10 +70,7 @@ public class QuizActivity extends Activity {
         Toast.makeText(getApplicationContext(), "Jawaban BENAR : " + soal[nomor][5], Toast.LENGTH_SHORT).show();
 
         if(btn.getText().toString() == soal[nomor][5]) {
-            skorTambah = 20;
-            Intent intentScore = new Intent(QuizActivity.this, GameActivity.class);
-            intentScore.putExtra(GameActivity.EXTRA_SCORE, skorTambah);
-            startActivity(intentScore);
+            GameActivity.SCORE += 20;
             finish();
         }
     }
