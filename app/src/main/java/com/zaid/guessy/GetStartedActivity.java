@@ -12,7 +12,8 @@ public class GetStartedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
     }
-
+    // Pindah ke Menu EnterName
+    // untuk Memasukkan USERNAME PLAYER
     public void started(View view) {
         Intent masukanNama = new Intent(GetStartedActivity.this, EnterNameActivity.class);
         startActivity(masukanNama);

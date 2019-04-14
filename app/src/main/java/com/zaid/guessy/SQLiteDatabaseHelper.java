@@ -5,13 +5,19 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+// Class untuk Membantu dalam Pengolahan Isi database Game
 public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
-
+    // Nama Database
     private static final String DATABASE_NAME = "db_guess.db";
+    // Versi Database
     private static final int DATABASE_VERSION = 1;
+    // Nama Table
     public static final String TABLE_NAME = "score_board";
+    // kolom ID
     public static final String KOLOM_ID = "id_score";
+    // kolom USERNAME
     public static final String KOLOM_USERNAME = "username";
+    // kolom SCORE
     public static final String KOLOM_SCORE = "skor";
 
     public SQLiteDatabaseHelper(Context context) {
@@ -20,11 +26,13 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        // Skrip SQL untuk membuat Table SKOR Jika Belum ada
         String sql = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " +
                 KOLOM_ID + " INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
                 KOLOM_USERNAME + " VARCHAR(100) NOT NULL, " +
                 KOLOM_SCORE + " INTEGER NOT NULL" +
                 ")";
+        // Mengekseskusi Skrip
         db.execSQL(sql);
     }
 
@@ -32,6 +40,7 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         Log.w("DB Adapter", "Upgrade database dari versi " + oldVersion + " ke " +
                 newVersion + ", akan menghapus semua data lama ?");
+        // Menghapus TABLE SKOR
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }

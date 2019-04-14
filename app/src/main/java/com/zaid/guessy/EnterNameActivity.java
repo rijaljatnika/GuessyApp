@@ -17,7 +17,8 @@ public class EnterNameActivity extends Activity {
 
         txtNama = (EditText) findViewById(R.id.editNama);
     }
-
+    // Pindah ke Main Menu dan
+    // LOGIN ke
     public void submitNama(View view) {
         Intent submitNama = new Intent(EnterNameActivity.this, MainMenuActivity.class);
         submitNama.putExtra(MainMenuActivity.EXTRA_USERNAME, txtNama.getText().toString());
