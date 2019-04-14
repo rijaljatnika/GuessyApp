@@ -53,7 +53,7 @@ public class GameActivity extends Activity {
         setContentView(R.layout.activity_game);
 
         // Inisialisasi Nilai Awal
-        numCount = 10;
+        numCount = 5;
         numColumn = 5;
         // Menghitung Jumlah Grid Total
         jumlahGrid = numColumn * numColumn;
