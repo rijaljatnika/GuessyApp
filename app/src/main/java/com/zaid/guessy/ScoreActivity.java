@@ -11,7 +11,7 @@ public class ScoreActivity extends Activity {
 
     private ListView listScore;
     private DBAdapter db;
-    private ArrayList<String> list;
+    private ArrayList<Player> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +20,10 @@ public class ScoreActivity extends Activity {
 
         db = new DBAdapter(this);
         db.open();
-        list = new ArrayList<String>();
-        list.addAll(db.getAllData());
+        list = new ArrayList<Player>();
+        list.addAll(db.readData());
         listScore = (ListView) findViewById(R.id.list_high_score);
-        ArrayAdapter<String> adapterScore = new ArrayAdapter<String>(
-                this,android.R.layout.simple_list_item_1, list
-        );
-        listScore.setAdapter(adapterScore);
+        listScore.setAdapter(new PlayerAdapter(this, R.layout.list_score, list));
         db.close();
     }
 }

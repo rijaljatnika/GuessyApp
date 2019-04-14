@@ -153,6 +153,7 @@ public class GameActivity extends Activity {
         if(numCount == 5) {
             Intent intentScore = new Intent(GameActivity.this, ResultActivity.class);
             startActivity(intentScore);
+            finish();
         }
     }
 
@@ -166,5 +167,14 @@ public class GameActivity extends Activity {
         Intent intentReset = new Intent(GameActivity.this, GameActivity.class);
         finish();
         startActivity(intentReset);
+    }
+
+    public void initGame(GridView gv) {
+        int grids = gv.getChildCount();
+        for (int i = 0; i < grids; i++) {
+            Button btn = (Button) gv.getChildAt(i);
+            btn.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+            btn.setTextColor(Color.WHITE);
+        }
     }
 }
