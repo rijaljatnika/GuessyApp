@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".KnowledgeActivity">
 
+    <!-- tombol navigasi ke Artikel Pengertian Menstruasi -->
     <Button
         android:id="@+id/pemahaman"
         android:layout_width="wrap_content"
@@ -23,6 +24,7 @@
         android:layout_above="@id/fakta"
         android:textAllCaps="false" />
 
+    <!-- tombol navigasi ke Artikel tentang fakta2 PMS -->
     <Button
         android:id="@+id/fakta"
         android:layout_width="wrap_content"
@@ -37,6 +39,7 @@
         android:text="Fakta"
         android:textAllCaps="false" />
 
+    <!-- tombol navigasi ke Artikel tentang Mitos2 PMS -->
     <Button
         android:id="@+id/mitos"
         android:layout_width="wrap_content"
@@ -51,6 +54,7 @@
         android:text="Mitos"
         android:textAllCaps="false" />
 
+    <!-- tombol navigasi untuk kembali ke Main Menu -->
     <Button
         android:id="@+id/kembali"
         android:layout_width="wrap_content"

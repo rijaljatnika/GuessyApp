@@ -11,7 +11,7 @@ public class PemahamanActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pemahaman);
     }
-
+    // Menutup Pemahaman dan Kembali ke Main Menu
     @Override
     public void onBackPressed() {
         finish();

@@ -11,7 +11,7 @@ public class FaktaActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fakta);
     }
-
+    // Menutup Pemahaman dan Kembali ke Main Menu
     @Override
     public void onBackPressed() {
         finish();

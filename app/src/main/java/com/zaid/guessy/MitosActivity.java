@@ -11,6 +11,8 @@ public class MitosActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mitos);
     }
+
+    // Menutup Pemahaman dan Kembali ke Main Menu
     @Override
     public void onBackPressed() {
         finish();
