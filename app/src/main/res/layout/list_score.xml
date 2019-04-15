@@ -6,6 +6,7 @@
     android:layout_margin="10dp"
     android:background="@drawable/scorelist">
 
+    <!-- Urutan di Papan High Score -->
     <TextView
         android:id="@+id/scoreNomor"
         android:layout_width="50dp"
@@ -20,6 +21,7 @@
         android:background="@drawable/scorelist"
         android:backgroundTint="@color/colorPrimaryDark"/>
 
+    <!-- Username Player di Papan High Score -->
     <TextView
         android:id="@+id/scoreUsername"
         android:layout_width="100dp"
@@ -34,6 +36,7 @@
         android:layout_centerVertical="true"
         android:layout_toRightOf="@id/scoreNomor"/>
 
+    <!-- Score Player di Papan High Score -->
     <TextView
         android:id="@+id/scoreScore"
         android:layout_width="match_parent"

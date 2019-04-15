@@ -11,28 +11,49 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBAdapter {
-
+    // Context Database Adapter
     private final Context context;
+    // helper untuk membantu mengolah Database GAME
     private SQLiteDatabaseHelper dbHelper;
+    // Database SQLITE
     private SQLiteDatabase db;
+    // Kolom dalam Table
     private String[] semuaKolom = {SQLiteDatabaseHelper.KOLOM_ID,
             SQLiteDatabaseHelper.KOLOM_USERNAME,
-            SQLiteDatabaseHelper.KOLOM_SCORE};
+            SQLiteDatabaseHelper.KOLOM_SCORE
+    };
 
+    // Constructor kelas DBAdapter
     public DBAdapter(Context context) {
         this.context = context;
         dbHelper = new SQLiteDatabaseHelper(this.context);
     }
 
+    // Fungsi untuk Membuka Database dan sebagai
+    // Awalan untuk Mengolah Table yang ada di dalamnya.
     public DBAdapter open() throws SQLException {
         db = dbHelper.getWritableDatabase();
         return this;
     }
 
+//    public Player searchPlayer(String username, String password) {
+//        SQLiteDatabase dbs =
+//        // Mencari data Player
+//        Cursor cursor = db.rawQuery("SELECT * FROM " + SQLiteDatabaseHelper.TABLE_USER +
+//                " WHERE " + SQLiteDatabaseHelper.KOLOM_USERNAME + " =? " + " AND " +
+//                            SQLiteDatabaseHelper.KOLOM_PASSWORD + " =? " ,
+//                new String[]{username, password});
+//        cursor.moveToFirst();
+//
+//        return player;
+//    }
+
+    // Menutup Database
     public void close() {
         dbHelper.close();
     }
 
+    // Menyisipkan skor ke Table SKOR
     public long insertData(String nama, int skor) {
         ContentValues values = new ContentValues();
         values.put(SQLiteDatabaseHelper.KOLOM_USERNAME, nama);
@@ -52,28 +73,39 @@ public class DBAdapter {
 //        return hasil;
 //    }
 
+    // Membaca Data PLAYER dari database dan
+    // Mengembalikkan Data berupa LIST PLAYER
     public ArrayList<Player> readData() {
+        // Deklarasi dan Menginisialisasi Kursor untuk mengolah Tabel SKOR
         Cursor cursor = db.query(SQLiteDatabaseHelper.TABLE_NAME, semuaKolom, null, null, null, null, SQLiteDatabaseHelper.KOLOM_SCORE + " DESC");
+        // Menempatkan Kursor ke data paling awal
+        // di Tabel tersebut.
         cursor.moveToFirst();
-
+        // List Player
         ArrayList<Player> allData = new ArrayList<>();
-
+        // Menambahkan data PLAYER ke List
         while(! cursor.isAfterLast()) {
+            // Inisialisasi Data Plater sesuai dengan data
+            // yang ada di Database
             Player dataPlayer = new Player(
                     Integer.parseInt(cursor.getString(0)),
                     cursor.getString(1),
                     Integer.parseInt(cursor.getString(2))
-
             );
+            // Memberitahukan USERNAME yang telah ditambahkan ke List
             Log.w("INFO", "username = " + dataPlayer.toString());
+            // Menempatkan data PLAYER ke LIST
             allData.add(dataPlayer);
             cursor.moveToNext();
         }
+        // Menghentikan kursor
         cursor.close();
-
+        // Mengembalikkan List PLAYER yang ada di Database
         return allData;
     }
 
+    // Membaca Data PLAYER dari database dan
+    // Mengembalikkan Data berupa LIST PLAYER
     public ArrayList<String> getAllData() {
 
         Cursor cursor = db.query(SQLiteDatabaseHelper.TABLE_NAME, semuaKolom, null, null, null, null, SQLiteDatabaseHelper.KOLOM_SCORE + " DESC");

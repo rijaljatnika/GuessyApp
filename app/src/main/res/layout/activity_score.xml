@@ -7,6 +7,7 @@
     tools:context=".ScoreActivity"
     android:background="@drawable/background">
 
+    <!-- Menampilka Judul Papan High Score-->
     <TextView
         android:id="@+id/title_high_score"
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold" />
-
+    <!-- Menampilkan LIST HIGH SCORE dari Para Player -->
     <ListView
         android:id="@+id/list_high_score"
         android:layout_width="match_parent"

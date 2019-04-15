@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MitosActivity"></activity>
+        <activity android:name=".PemahamanActivity"></activity>
         <activity android:name=".FaktaActivity" />
-        <activity android:name=".PemahamanActivity" />
+        <activity android:name=".MitosActivity" />
+        <activity android:name=".QuizActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".ScoreActivity" />
         <activity android:name=".RatingActivity" />
-        <activity android:name=".ProfileActivity" />
         <activity android:name=".KnowledgeActivity" />
         <activity android:name=".GameActivity" />
         <activity android:name=".MainMenuActivity" />

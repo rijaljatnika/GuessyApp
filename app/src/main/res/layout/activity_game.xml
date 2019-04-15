@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     android:layout_rowWeight="1"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@color/cardview_dark_background"
     tools:context=".GameActivity">
 
+    <!-- Menampilkan Judul Game -->
     <TextView
         android:id="@+id/game_title"
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
         android:gravity="center"
         android:textSize="20sp" />
 
+    <!-- Menampilakn Deskripsi Bermain -->
     <TextView
         android:id="@+id/game_desc"
         android:layout_width="match_parent"
@@ -31,269 +33,10 @@
         android:textColor="@color/cardview_light_background"
         android:fontFamily="@font/scada_regular"
         android:gravity="center"
-        android:text="Lets Find the Photo with the feling the vibration"
+        android:text="Lets Find the Heart with the feling the vibration"
         android:layout_below="@id/game_title"/>
 
-    <!--
-    <TableLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button19"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button20"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/button21"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button23"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-
-            <Button
-                android:id="@+id/button25"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="1px"
-                android:background="@color/colorAccent"
-                android:onClick="btnClick"
-                android:text="E" />
-        </TableRow>
-
-    </TableLayout>
-    -->
-
+    <!-- GRID BOARD untuk dimainkan dalam game -->
     <GridView
         android:id="@+id/board"
         android:layout_width="match_parent"
@@ -311,6 +54,7 @@
 
     </GridView>
 
+    <!-- Navigasi GAME -->
     <LinearLayout
         android:id="@+id/game_nav"
         android:padding="10dp"
@@ -319,6 +63,7 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
+        <!-- Kembali ke Main Menu -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="30dp"
@@ -330,6 +75,7 @@
             android:text="Back"
             android:background="@drawable/btn_round"/>
 
+        <!-- Menampilkan Waktu yang tersisa -->
         <TextView
             android:id="@+id/textTimer"
             android:layout_marginLeft="30dp"
@@ -340,6 +86,7 @@
             android:fontFamily="@font/fredoka_one_regular"
             android:text="Timer" />
 
+        <!-- Tombol untuk Memulai Kembali Permainan  -->
         <Button
             android:id="@+id/btnReset"
             android:layout_width="30dp"

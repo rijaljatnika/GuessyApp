@@ -5,37 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RatingActivity"
-    android:background="@drawable/background">
+    tools:context=".RatingActivity">
 
+    <!-- Menampilkan Gambar Bintang -->
     <ImageView
         android:layout_marginTop="200dp"
-        android:id="@+id/ekspresi"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:src="@drawable/ratingicon" />
+
+    <!-- Menampilkan RatingBar untuk Memberikan Rating pada Aplikasi -->
     <RatingBar
-        android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/hasilRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        android:fontFamily="@font/fredoka_one_regular"
-        android:text="Hasil rating"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp" />
+    <!-- Menampilkan tombol Submit pemberian Rating Aplikasi -->
     <Button
-        android:id="@+id/submit"
         android:layout_width="200dp"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
@@ -44,8 +32,9 @@
         android:textAllCaps="false"
         android:textSize="20sp"
         android:text="Submit"
-        android:background="@drawable/btn_round"
-        android:textColor="@color/colorPrimary"
-        android:backgroundTint="@android:color/white"
+        android:background="@drawable/rounded"
+        android:textColor="@color/cardview_light_background"
+        android:backgroundTint="@color/colorPrimary"
         />
+
 </LinearLayout>

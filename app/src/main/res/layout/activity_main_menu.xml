@@ -14,6 +14,7 @@
         android:layout_height="52dp"
         android:layout_weight="2">
 
+        <!-- Menampilakn Pesan "Welcome" kepada Player-->
         <TextView
             android:id="@+id/welcome_nama"
             android:layout_width="match_parent"
@@ -22,10 +23,11 @@
             android:layout_marginTop="22dp"
             android:fontFamily="@font/fredoka_one_regular"
             android:gravity="center"
-            android:text="Hanna Montana"
+            android:text="username"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
+        <!-- Menampilkan Nama Player yangs sedang main -->
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
@@ -44,11 +46,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
-        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
         android:columnCount="2"
-        android:rowCount="1">
+        android:rowCount="2">
 
+        <!-- Menampilkan Tombol navigasi Untuk Menu GAME -->
         <LinearLayout
             android:id="@+id/gameBoard"
             android:layout_width="128dp"
@@ -75,7 +78,7 @@
 
         </LinearLayout>
 
-        <!-- row 2 -->
+        <!-- Menampilkan Tombol navigasi Untuk Menu KNOWLEDGE -->
         <LinearLayout
             android:id="@+id/knowledge"
             android:layout_width="128dp"
@@ -105,7 +108,7 @@
 
         <!--row 3-->
 
-        <!-- row 2 -->
+        <!-- Menampilkan Tombol navigasi Untuk Menu RATING -->
         <LinearLayout
             android:id="@+id/rating"
             android:layout_width="128dp"
@@ -133,6 +136,7 @@
 
         </LinearLayout>
 
+        <!-- Menampilkan Tombol navigasi Untuk Menu SCORE -->
         <LinearLayout
             android:id="@+id/score"
             android:layout_width="128dp"
@@ -164,24 +168,33 @@
 
     </GridLayout>
 
+    <!-- Menampilkan Tombol navigasi Untuk Keluar dari Aplikasi -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/exit"
+        android:layout_width="128dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <Button
-            android:id="@+id/exit"
-            android:background="@drawable/btn_round"
-            android:layout_width="match_parent"
-            android:width="150dp"
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/hintExit"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/fredoka_one_regular"
             android:text="@string/hintExit"
             android:layout_gravity="center"
-            android:textAllCaps="false"
             android:textColor="@color/colorPrimary"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +7,23 @@
     android:background="@drawable/background"
     tools:context=".EnterNameActivity">
 
+    <!-- Menampilakn Label Nama untuk perintah Memasukkan Nama -->
     <TextView
         android:id="@+id/labelNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="232dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:fontFamily="@font/fredoka_one_regular"
+        android:layout_centerHorizontal="true"
         android:text="Enter Your Name"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_above="@id/editNama"/>
 
+    <!-- Memasukkan Nama Player -->
     <EditText
         android:id="@+id/editNama"
         android:layout_width="wrap_content"
@@ -38,16 +38,16 @@
         android:background="@drawable/rounded"
         android:backgroundTint="@android:color/white"
         android:ems="10"
-        android:hint="Type Here"
+        android:hint="Username"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
+    <!-- Tombol untuk Melanjutkan ke Main Menu-->
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -61,8 +61,7 @@
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@+id/editNama"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editNama"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

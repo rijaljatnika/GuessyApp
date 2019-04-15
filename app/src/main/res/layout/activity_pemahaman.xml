@@ -20,66 +20,60 @@
         android:textSize="24sp" />
 
     <ScrollView
-        android:background="@android:color/white"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
 
         <LinearLayout
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/images" />
+                android:src="@drawable/images" />
 
             <TextView
-                android:id="@+id/judulId"
+                android:id="@+id/judulId5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_bold"
                 android:text="Apa yang kamu ketahui tentang Mens?"
                 android:textSize="25dp" />
 
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textAlignment="viewStart"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_regular"
                 android:text="@string/artikel"
+                android:gravity="start"
                 android:textSize="13sp" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/download" />
+                android:src="@drawable/download" />
 
             <TextView
-                android:id="@+id/judulId"
+                android:id="@+id/judulId6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_bold"
                 android:text="Beberapa Adab Saat Sedang Haid"
                 android:textSize="25dp" />
 
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textAlignment="viewStart"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_regular"
                 android:text="@string/artikel2"
+                android:gravity="start"
                 android:textSize="13sp" />
 
             <ImageView
@@ -89,26 +83,24 @@
                 app:srcCompat="@drawable/muslimah" />
 
             <TextView
-                android:id="@+id/judulId"
+                android:id="@+id/judulId7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_bold"
                 android:text="Dalil tentang Haid di Alquran"
                 android:textSize="25dp" />
 
             <TextView
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:textAlignment="viewStart"
-                android:layout_toRightOf="@id/imageView2"
                 android:fontFamily="@font/scada_regular"
                 android:text="@string/artikel3"
+                android:gravity="start"
                 android:textSize="13sp" />
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>
